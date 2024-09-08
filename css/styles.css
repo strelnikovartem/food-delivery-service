@@ -255,17 +255,23 @@ border-radius: 0px 30px 30px 30px;
   padding-bottom: 201px;
 }
 
+.offers-container {
+  display: flex;
+}
+
 .offers-title {
   font-weight: 700;
   font-size: 42px;
 
   /* line-height: 50px; */
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .offers-text {
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 24px;
 
   /* line-height: 24px; */
   line-height: 1.5;
