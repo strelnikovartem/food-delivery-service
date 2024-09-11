@@ -25,6 +25,12 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
   background: #fefefe;
@@ -176,6 +182,12 @@ address {
   padding-bottom: 101px;
 }
 
+.favorite-container {
+  margin-left: 32px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .favorite-title {
   font-size: 42px;
   text-align: center;
@@ -195,6 +207,12 @@ address {
 
 .favorite-list-item {
   width: calc((100% - 64px) / 3);
+  border: 16px solid #ffe550;
+  border-radius: 197px;
+  height: 396px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reviews {
