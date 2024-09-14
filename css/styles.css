@@ -91,6 +91,10 @@ img {
   border: none;
 }
 
+.button-order-now:hover .button-order-now:focus {
+  border-color: #ffe450;
+}
+
 .hero {
   padding-top: 14px;
   padding-bottom: 69px;
@@ -273,67 +277,77 @@ img {
 }
 
 .reviews-title {
-  font-weight: 700;
   font-size: 42px;
   margin-bottom: 20px;
 }
 
 .reviews-text {
-  font-weight: 400;
-  font-size: 16px;
   margin-bottom: 32px;
 }
 
 .reviews-list {
   display: flex;
+  align-items: center;
   gap: 141px;
 }
 
-.reviews-item-stars {
-  display: block;
+.reviews-item {
+  width: calc((100% - 141px) / 2);
+  padding: 14px;
+  background-color: #fefefe;
+  border-radius: 0px 30px 30px 30px;
+  max-width: 501px;
+}
+
+.reviews-item-icon {
+  display: flex;
+  gap: 4px;
   margin-bottom: 29px;
 }
 
-.reviews-item {
-  width: 501px;
-  height: 231px;
-  padding: 14px;
-  background-color: #fff;
-  padding: 14px;
-  border-radius: 0px 30px 30px 30px;
+.reviews-icon {
+  fill: #ffe550;
 }
 
 .reviews-item-text {
-  font-weight: 700;
   font-size: 18px;
   margin-bottom: 41px;
-  display: block;
+  display: inline-block;
 }
 
 .reviews-item-block {
   display: flex;
-  max-width: 160px;
+  align-items: center;
+  /* border-right: 1px solid #7eb101;
+  width: 160px; */
 }
 
-.reviews-item-name {
-  font-weight: 500;
-  font-size: 14px;
+.reviews-item-block::after {
+  content: '';
+  background-color: #7eb101;
+  width: 1px;
+  height: 52px;
+  margin-left: 16px;
+}
 
-  /* line-height: 21px; */
-  line-height: 1.5;
+.reviews-item-img {
+  margin-right: 16px;
 }
 
 .reviews-item-block-name {
   display: block;
   padding-top: 4px;
-  margin-left: 16px;
+}
+
+.reviews-item-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .reviews-item-name-text {
   font-weight: 400;
   font-size: 14px;
-
-  /* line-height: 21px; */
   line-height: 1.5;
 }
 
@@ -344,44 +358,48 @@ img {
 
 .offers-container {
   display: flex;
+  align-items: center;
 }
 
 .offers-title {
   font-weight: 700;
   font-size: 42px;
-
-  /* line-height: 50px; */
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .offers-text {
-  font-weight: 400;
-  font-size: 16px;
-  margin-bottom: 24px;
-
-  /* line-height: 24px; */
   line-height: 1.5;
+  margin-bottom: 24px;
+  max-width: 532px;
 }
 
 .offers-form {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .offers-input {
-  font-weight: 400;
+  border: 0.85px solid #ffe550;
+  border-radius: 30px;
+  padding: 10px;
+  width: 395px;
+  height: 42px;
+  outline: transparent;
   font-size: 12px;
-
-  /* line-height: 18px; */
   line-height: 1.5;
   color: #505050;
+  padding-left: 11px;
+}
+
+.offers-input:focus {
+  border-color: #7eb101;
 }
 
 .offers-button {
-  font-weight: 500;
-  font-size: 13px;
-
-  /* line-height: 19px; */
-  line-height: 1.5;
+  width: 103px;
+  height: 42px;
 }
 
 .footer {
