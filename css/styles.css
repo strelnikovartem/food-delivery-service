@@ -89,10 +89,12 @@ img {
   min-width: 98px;
   height: 32px;
   border: none;
+  transition: background-color 250ms ease-in-out;
 }
 
-.button-order-now:hover .button-order-now:focus {
-  border-color: #ffe450;
+.button-order-now:hover,
+.button-order-now:focus {
+  background-color: #ffe450;
 }
 
 .hero {
@@ -230,6 +232,19 @@ img {
 .about-btn {
   border: 2px solid #7eb101;
   background-color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 106px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+.about-btn:hover {
+  background-color: #bbf330;
+  border-color: #bbf330;
 }
 
 .favourite {
@@ -393,7 +408,7 @@ img {
   padding-left: 11px;
 }
 
-.offers-input:focus {
+.offers-input:hover {
   border-color: #7eb101;
 }
 
@@ -403,20 +418,28 @@ img {
 }
 
 .footer {
+  box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.container {
+  background-image: url(../images/fruit_footer.png);
+  background-repeat: no-repeat;
+  background-size: 1211px;
+  background-position: bottom;
 }
 
 .footer-container {
-  /* display: flex; */
 }
 
 .footer-box {
   display: flex;
+  justify-content: space-between;
+}
+
+.footer-wraper {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 143px;
 }
 
 .footer-logo {
@@ -436,15 +459,16 @@ img {
   font-size: 14px;
 }
 
-.footer-nav-link {
+.footer-block {
 }
 
 .footer-subscribe {
+  display: block;
   font-weight: 500;
   font-size: 14px;
-
-  /* line-height: 21px; */
   line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 12px;
 }
 
 .footer-form {
@@ -456,23 +480,38 @@ img {
 .footer-input {
   font-weight: 400;
   font-size: 12px;
-
-  /* line-height: 18px; */
   line-height: 1.5;
   color: #505050;
+  border: 0.85px solid #ffe550;
+  border-radius: 30px;
+  padding: 12px;
+  width: 279px;
+  height: 42px;
+  margin-right: 13px;
 }
 
 .footer-button {
   font-weight: 500;
   font-size: 13px;
-
-  /* line-height: 19px; */
   line-height: 1.5;
+  border: 0.85px solid #7eb101;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 103px;
+  height: 42px;
+  background-color: #fff;
+  transition-property: border-color 250ms linear;
+}
+
+.footer-button:hover {
+  border: 2px solid #ffe450;
 }
 
 .footer-text {
   font-weight: 400;
   font-size: 12px;
+  min-width: 341px;
+  margin-left: auto;
 }
 
 .footer-link {
