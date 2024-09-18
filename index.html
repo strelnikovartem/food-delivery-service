@@ -354,19 +354,56 @@
           By subscribing you agree to with our
           <a class="footer-link" href="">Privacy Policy</a>
         </p>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <a class="footer-link" href="">Privacy Policy</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="">Terms of Service</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="">Cookies Settings</a>
-          </li>
-        </ul>
-        <p class="footer-right">2022 FoodSta. All right reserved.</p>
+        <div class="footer-end">
+          <div class="footer-end-list">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a class="footer-link" href="">Privacy Policy</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="">Terms of Service</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="">Cookies Settings</a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer-right">2022 FoodSta. All right reserved.</p>
+        </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-btn">
+          <svg class="modal-close-icon" width="12" height="12">
+            <use href="./images/icon.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form>
+          <label class="modal-label"
+            >Name
+            <input type="text" class="modal-input" placeholder="Your name" />
+          </label>
+          <label class="modal-label"
+            >Phone number
+            <input
+              type="tel"
+              class="modal-input"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            />
+          </label>
+          <label class="modal-label"
+            >E-mail
+            <input
+              type="email"
+              class="modal-input"
+              placeholder="example@gmail.com"
+            />
+          </label>
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
