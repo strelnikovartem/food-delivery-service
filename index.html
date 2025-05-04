@@ -381,26 +381,40 @@
         </button>
         <p class="modal-title">Order Form</p>
         <form>
-          <label class="modal-label"
-            >Name
-            <input type="text" class="modal-input" placeholder="Your name" />
-          </label>
-          <label class="modal-label"
-            >Phone number
+          <div class="modal-label-name">
+            <label class="modal-label" for="user-name-id">Name</label>
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              placeholder="Your name"
+              id="user-name-id"
+              required
+            />
+          </div>
+          <div class="modal-label-tel">
+            <label class="modal-label" for="user-tel-id">Phone number</label>
             <input
               type="tel"
               class="modal-input"
+              name="user-tel"
               placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              id="user-tel-id"
+              required
             />
-          </label>
-          <label class="modal-label"
-            >E-mail
+          </div>
+
+          <div class="modal-label-email">
+            <label class="modal-label" for="user-email-id">E-mail</label>
             <input
               type="email"
               class="modal-input"
+              name="user-email"
               placeholder="example@gmail.com"
+              id="user-email-id"
+              required
             />
-          </label>
+          </div>
           <button type="submit" class="modal-send-btn">Send</button>
         </form>
       </div>
